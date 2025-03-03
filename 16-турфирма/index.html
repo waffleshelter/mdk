@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шангри-Ла</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- шапка -->
+    <header class="header">
+        <h1 class="header__logo">Шангри-Ла</h1>
+        <nav class="header__nav">
+            <a href="tel:83431224523" class="header__phone">8-343-122-45-23</a>
+        </nav>
+    </header>
+
+    <!-- слоган -->
+    <section class="slogan">
+        <div class="slogan__bg" style="background-image: url(img/hero.jpg);"></div>
+        <h1 class="slogan__title">С нами путешествовать просто</h1>
+        <h2 class="slogan__subtitle">Мы обо всем позаботились - отдыхайте!</h2>
+        <a href="#bid" class="slogan__btn">Подобрать тур</a>
+    </section>
+
+    <!-- особенностт горящих туров -->
+    <section class="particularuty">
+        <h2 class="section-title">Особенности горящих туров</h2>
+        <h3 class="particularity__title">Низкая цена</h3>
+        <p class="particularity__text">Не все туристы имеют возможность заранее спланировать поездку. Иногда решение об
+            отпуске принимается спонтанно, и времени на подготовку путешествия попросту не
+            остается.</p>
+        <h3 class="particularity__title">Возможность отправиться в поездку немедленно</h3>
+        <p class="particularity__text">Между покупкой турпакета и непосредственным путешествием проходит совсем мало
+            времени. Таким образом, туристу не приходится томиться в ожидании поездки, а можно
+            наслаждаться отдыхом и новыми впечатлениями практически сразу.</p>
+        <h3 class="particularity__title">Отсутствие возможности выбора</h3>
+        <p class="particularity__text">Определенного типа отеля, даты и времени вылета самолета, а также количества дней,
+            которые можно будет провести на отдыхе в другой стране. Это связано с тем, что
+            предлагаемый горящий тур уже предварительно скомплектован туроператором и не
+            подлежит изменению.</p>
+    </section>
+
+    <!-- Горящие туры по напрвалению -->
+<section class="tour">
+  <h2 class="section-title">Горящие туры по направлениям</h2>
+<div class="tour__container">
+  <input type="radio" name="categories" id="all" value="all" checked>
+  <input type="radio" name="categories" id="rus" value="rus">
+  <input type="radio" name="categories" id="id" value="id">
+  <input type="radio" name="categories" id="cn" value="cn">
+  <input type="radio" name="categories" id="vn" value="vn">
+  <ol class="filter">
+    <li><label for="all" >Все направления</label></li>
+    <li><label for="rus">Россия</label></li>
+    <li><label for="id">Индонезия</label></li>
+    <li><label for="cn">Китай</label></li>
+    <li><label for="vn">Вьетнам</label></li>
+  </ol>
+  <ul class="posts">
+    <li class="post" data-category="rus">
+      <a href="#!"> 
+        <img src="img/rus1.jpg" alt="тур в Сочи" class="post__img">
+        <h3 class="post__title">Сочи</h3>
+        <h3 class="post__price">48600 руб.</h3>
+        <p class="post__categories">Россия</p>
+      </a>
+    </li>
+    <li class="post" data-category="id">
+      <a href="#!"> 
+        <img src="img/id1.jpg" alt="тур в Индонезию" class="post__img">
+        <h3 class="post__title">Кута</h3>
+        <h3 class="post__price">88600 руб.</h3>
+        <p class="post__categories">Индонезия</p>
+      </a>
+    </li>
+    <li class="post" data-category="vn">
+      <a href="#!"> 
+        <img src="img/vn1.jpg" alt="тур в Вьетнам" class="post__img">
+        <h3 class="post__title">Дананг</h3>
+        <h3 class="post__price">65000 руб.</h3>
+        <p class="post__categories">Вьетнам</p>
+      </a>
+    </li>
+    <li class="post" data-category="cn">
+      <a href="#!"> 
+        <img src="img/cn1.jpg" alt="тур в Китай" class="post__img">
+        <h3 class="post__title">Санья</h3>
+        <h3 class="post__price">78000 руб.</h3>
+        <p class="post__categories">Китай</p>
+      </a>
+    </li>
+    <li class="post" data-category="rus">
+      <a href="#!"> 
+        <img src="img/rus2.jpg" alt="тур в Крым" class="post__img">
+        <h3 class="post__title">Крым</h3>
+        <h3 class="post__price">48600 руб.</h3>
+        <p class="post__categories">Россия</p>
+      </a>
+    </li>
+    <li class="post" data-category="vn">
+      <a href="#!"> 
+        <img src="img/vn2.jpg" alt="тур в Вьетнам" class="post__img">
+        <h3 class="post__title">Нянчанг</h3>
+        <h3 class="post__price">88600 руб.</h3>
+        <p class="post__categories">Вьетнам</p>
+      </a>
+    </li>
+    <li class="post" data-category="cn">
+      <a href="#!"> 
+        <img src="img/cn2.jpg" alt="тур в Китай" class="post__img">
+        <h3 class="post__title">Пекин</h3>
+        <h3 class="post__price">98000 руб.</h3>
+        <p class="post__categories">Китай</p>
+      </a>
+    </li>
+    <li class="post" data-category="id">
+      <a href="#!"> 
+        <img src="img/id2.jpg" alt="тур в Индонезию" class="post__img">
+        <h3 class="post__title">Бали</h3>
+        <h3 class="post__price">88000 руб.</h3>
+        <p class="post__categories">Индонезия</p>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+</section>
+
+<section class="manager">
+<h2 class="section-title">Наши консультанты</h2>
+<p class="manager__text">У нас работают профессионалы с огромным опытом. Мы заботимся, о том, чтобы вы хорошо отдохнули.</p>
+<ul class="manager__list">
+  <li class="manager-item">
+    <img src="img/manager1.jpg" alt="#" class="manager-item-img">
+    <p class="manager-name">Светлана Астахова - менеджер по туризму  </p>
+  </li>
+  <li class="manager-item">
+    <img src="img/manager2.jpg" alt="#" class="manager-item-img">
+    <p class="manager-name">Сергей Иванов - менеджер по туризму</p>
+  </li>
+  <li class="manager-item">
+    <img src="img/manager3.jpg" alt="#" class="manager-item-img">
+    <p class="manager-name">Олеся Михайлова - менеджер по туризму</p>
+  </li>
+</ul>
+</section>
+<!-- видеофон -->
+<div class="video-bg">
+  <video src="video.mp4" type="video/mp4" autoplay muted loop></video> <!-- loop-зацикленная muted=без звука-->
+  <div class="bg"></div>
+  <div class="video-bg__content">
+  <h1 class="slogan__title">Совсем скоро старт бронирования туров с кэшбэком</h1>
+  <h2 class="slogan__subtitle">Успейте поймать самые выгодные предложения!</h2>
+</div>
+</div>
+<!-- преимущества -->
+<section class="features">
+  <h2 class="features-title">Наши преимущества</h2>
+  <p class="features__text">Лучший онлайн поиск туров по России и за границей</p>
+  <ul class="features__list">
+    <li class="features__list-item">
+      <i class="fa-solid fa-chevron-down"></i>
+      <p class="item-text">Моментальное подтверждение турпакета</p>
+    </li>
+    <li class="features__list-item">
+      <i class="fa-solid fa-list"></i>
+      <p class="item-text">Огромный выбор туров по направлениям
+
+      </p>
+    </li>
+    <li class="features__list-item">
+      <i class="fa-solid fa-user"></i>
+      <p class="item-text">Вся информация о клиенте конфиденциальна</p>
+    </li>
+    <li class="features__list-item">
+      <i class="fa-solid fa-handshake"></i>
+      <p class="item-text">Быстрое оформление договора</p>
+    </li>
+    <li class="features__list-item">
+      <i class="fa-solid fa-percent"></i>
+      <p class="item-text">Максимальные скидки по всем операторам</p>
+    </li>
+    <li class="features__list-item">
+      <i class="fa-solid fa-plane"></i>
+      <p class="item-text">Покупка авиабилетов в любую точку мира</p>
+    </li>
+  </ul>
+</section>
+<!-- отзывы -->
+<div class="reviews">
+    <div class="reviews__item">
+        <span>Отдыхали в Таиланде с 15.10.2022 г. От данной турфирмы. Отдых получился отличный, с
+            погодой угадали, без дождей. Спасибо всем сотрудникам турфирмы Шангри-Ла!!!</span>
+    </div>
+    <div class="reviews__item">
+        <span>Благодарны очень за организацию тура в Таиланд менеджеру Светлане. Информацию
+            предоставила в полном объеме, доброжелательная, активная, оперативно были выполнены
+            все наши пожелания!</span>
+    </div>
+    <div class="reviews__item">
+        <span>Хочу выразить огромную благодарность Сергею. Спасибо огромное за наш прекрасный
+            отпуск! Спасибо за выбор страны и отеля. Мы довольны!</span>
+    </div>
+    <div class="reviews__item">
+        <span>С 16 по 27 октября отдыхали в Таиланде, Паттайе, отеле "Амбассадор Сити". Выражаю
+            огромную благодарность менеджеру Олесе за удачно подобранный тур: удобное время
+            вылета, превосходный отель, чудесный пляж.
+            Заявка на подбор тура</span>
+    </div>
+</div>
+<!-- О компании/подбор тура -->
+ <section class="section-tour" id="bid">
+    <h2 class="section-title">Заявка на подбор тура</h2>
+    <p class="section-text">Наша компания создана для Вашего комфорта. Мы сделали выбор и покупку тура
+        максимально удобным для Вас. В нашем поиске можно найти путешествия от 80-ти
+        туроператоров. Оплата туров происходит через защищенные каналы связи. Если Вам
+        понадобится помощь специалиста в подборе тура, наши менеджеры всегда, с радостью
+        подберут путешествие по Вашим запросам и будут с Вами на связи на протяжении всего
+        отдыха. Покупая тур в нашей компании, Вы не платите никаких дополнительных
+        комиссий и сборов, Вы бронируете тур по цене туроператора. Чтобы сделать заявку на
+        подбор тура, заполните все поля формы и нажмите Отправить заявку.</p>
+        <div class="container-form">
+            <form action="#" class="form">
+                <div class="form-group">
+                    <label for="country">Страна назначения</label>
+                    <select id="country">
+                        <option value="rus1">Россия</option>
+                        <option value="vn1">Вьетнам</option>
+                        <option value="id1">Индонезия</option>
+                        <option value="cn1">Китай</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">Город вылета</label>
+                    <select id="city">
+                        <option value="1">Екатеринбург</option>
+                        <option value="2">Москва</option>
+                        <option value="3">Пермь</option>
+                        <option value="4">Челябниск</option>
+                        <option value="5">Новосибирск</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="day">Кол-во дней</label>
+                    <input type="number" id="day" min="3" max="30" value="3">
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Кол-во человек</label>
+                    <input type="number" id="quantity" min="1" max="30" value="1">
+                </div>
+                <div class="form-group-full">
+                    <label for="">Что должно быть включено в стоимость тура</label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>перелёт</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>проживание</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>питание</span>
+                    </label>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span>трансфер</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="name">Имя*</label>
+                    <input type="text" id="name" required maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" id="surname" maxlength="30">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" placeholder="mail@mail.ru" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефона*</label>
+                    <input type="tel" id="phone" placeholder="8-343-122-45-23" required>
+                </div>
+                <div class="form-group-full">
+                    <label>Предпочтительный способ связи</label>
+                    <label class="custom-radio">
+                        <input type="radio" name="communication">
+                        <span>напишите на указанный email</span>
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="communication">
+                        <span>позвоните</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="time">Во сколько позвонить</label>
+                    <input type="time" id="time">
+                </div>
+                <div class="form-group-width">
+                    <label>Дополнительных комментарии</label>
+                    <textarea></textarea>
+                </div>
+                <div class="form-button">
+                    <button class="sub-btn" type="submit">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+ </section>
+ <!-- футер -->
+<footer class="footer">
+    <ul class="footer__social">
+        <li class="social-item">
+            <a href="#!" class="social-link">
+                <i class="fa-brands fa-vk"></i>
+            </a>
+            <li class="social-item">
+                <a href="#!" class="social-link">
+                    <i class="fa fa-snapchat-square"></i>
+                </a>
+            </li>
+            <li class="social-item">
+                <a href="#!" class="social-link">
+                    <i class="fa fa-pinterest-square"></i>
+                </a>
+            </li>
+            <li class="social-item">
+                <a href="#!" class="social-link">
+                    <i class="fa fa-github-square"></i>
+                </a>
+            </li>
+            <li class="social-item">
+                <a href="#!" class="social-link">
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                </a>
+            </li>
+        </li>
+    </ul>
+    <p class="copy">Сайт разработан RusyaProduction</p>
+    <div class="buttonup">
+        <a href="#top" class="up">
+            <img src="img/up.png" alt="вверх">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

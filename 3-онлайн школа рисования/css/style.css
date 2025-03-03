@@ -1,0 +1,285 @@
+/*подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v34-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* raleway-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/raleway-v34-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* глобальные стили*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Raleway', arial;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #3e3e3e;
+ } 
+
+ p {
+    text-align: justify;
+ }
+
+ a {
+    text-decoration: none;
+    color: #3396e7;
+ }
+
+ a:hover {
+    color: #090a95
+ }
+
+ img {
+    max-width: 100%;
+ }
+
+ section {
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px;
+ }
+
+ /* шапкаыбю */
+ .header {
+    padding: 38px 0;
+    height: 30vh;
+    font-family: 'Raleway', sans-serif;
+    color: #3c98e5;
+    text-align: center;
+    background-image: url(../img/header-fon.jpg);
+}
+
+.header-menu {
+    height: 10vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #3c98e5;
+    text-align: center;
+    background-color: #3396e7;
+}
+
+.logo-text {
+    margin-top: 60px;
+    font-family: 'Orelega One';
+    font-size: 60px;
+    color: #3396e7;
+}
+
+nav {
+    padding: 30px 10px;
+    background-image: url(../img/fabric5.png);
+}
+
+.header__logo {
+    border-radius: 0;
+    margin: 50px;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px;
+    color: #f6f4f4;
+}
+
+.menu-link_active {
+    color:#000;
+}
+
+main {
+    padding: 1% 10%;
+}
+
+.first-img {
+    box-shadow: 0px 0px 10px #3396e7;
+    max-width: 52%;
+}
+
+/* начальная информация */
+.intro {
+    text-align: center;
+}
+
+.intro_title {
+    margin: 10px 0 40px;
+    font-weight: 900;
+    color: #3396e7;
+}
+.intro__list {
+    list-style-type: none;
+}
+
+.fa-user {
+    margin-right: 35px;
+    color: #e73375;
+}
+
+.fa-pen-to-square {
+    margin-right: 35px;
+    color: #e73375;
+}
+
+.fa-clock {
+    margin-right: 35px;
+    color: #e73375;
+}
+
+.intro__list-item {
+    display: inline-block;
+    margin: 30px;
+}
+
+.item_blue {
+    color: #3396e7;
+}
+
+/* Содержание */
+.contents__list{
+    margin-bottom: 0px;
+    margin-left: 30px;
+}
+
+.subtitle {
+    color: #e73375;
+    font-weight: 900;
+    font-size: 25px;
+    margin: 20px 0px 20px;
+}
+
+.subtitle__1 {
+    color: #3c98e5;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.serue-img {
+    text-align: center;
+    margin: 20px;
+}
+
+.contents__list .color {
+    color: #3396e7;
+}
+
+/*  блюдо */
+.dish__entry {
+    text-align: center;
+}
+
+.step-title{
+    text-align: left;
+    color: #e73375;
+    font-weight: 900;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.fa-pencil{
+    color: #e73375;
+    margin-right: 35px;
+}
+.list{
+    list-style: none;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.list .fa-check {
+    color: #e73375;
+    margin-right: 15px;
+    font-style: 20px;
+}
+
+.dish__recipe{
+    text-align: center;
+    display: flex;
+}
+
+.recipe-step {
+    border: 1px solid #e73375;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #f6f4f4;
+    margin: 15px 35px;
+    width: 50%;
+    display: inline-block;
+    height: fit-content;
+}
+
+.vasa-step {
+    border: 1px solid #e73375;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #f6f4f4;
+    margin: 15px 35px;
+    width: 50%;
+    display: flex;
+    height: fit-content;
+}
+
+.step-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 8px;
+}
+
+.border-img{
+    width: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #7098b8;
+    margin: 15px;
+}
+.vasa{
+    width: 25%;
+}
+
+/* подвал для детей) */
+.footer {
+    background-color: #3396e7;
+    color: #fff;
+    padding: 20px 50px;
+}
+
+.footer__copyright {
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.font-color{
+    color: #e73375;
+}
+
+.active-site{
+    color: #090a95;
+}
+
+.font-color-blue{
+    color: #090a95;
+}
+
+
+

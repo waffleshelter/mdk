@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="registration-form">
+        <div class="form__title">
+            <h1>форма регистрации</h1>
+        </div>
+        <form>
+            <div class="form__wrap">
+                <div class="input__wrap">
+                    <div class="input__item">
+                        <label for="fname" class="text">Ваше имя</label>
+                        <input type="text" id="fname" class="avatar">
+                    </div>
+                    <div class="input__item">
+                        <label for="lname" class="text">Ваша фамилия</label>
+                        <input type="text" id="lname">
+                    </div>
+                </div>
+                <div class="input__item">
+                    <label for="email" class="text">Email адрес</label>
+                    <input type="email" id="email" class="mail" placeholder="email@servise.com">
+                </div>
+                <div class="input__item">
+                    <label class="text">Пол</label>
+                    <ul class="gender">
+                        <li>
+                            <label for="male" class="radio-wrap">
+                                <input type="radio" name="gender" id="male" class="input-radio" checked>
+                            </label>
+                            <span>Мужской</span>
+                        </li>
+                        <li>
+                            <label for="female" class="radio-wrap">
+                                <input type="radio" name="gender" id="female" class="input-radio">
+                            </label>
+                            <span>Женский</span>
+                        </li>
+                        <li>
+                            <label for="artem" class="radio-wrap">
+                                <input type="radio" name="gender" id="artem" class="input-radio">
+                            </label>
+                            <span>Артём</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="input__item">
+                    <label for="country" class="text">Страна</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="input__item">
+                    <label for="city" class="text">Город</label>
+                    <input type="text" id="city">
+                </div>
+                <input type="submit" value="зарегистрироваться" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

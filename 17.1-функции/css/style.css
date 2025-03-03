@@ -1,0 +1,28 @@
+.cards {
+    --gap: 50px;
+    --elements:4;
+
+    min-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.cards__item {
+    min-height: 400px;
+    background-color: rgb(64, 29, 145);
+    width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        --elements:2;
+    }
+}
+
+@media (max-width: 576px){
+    .cards {
+        --elements: 1;
+    }
+}

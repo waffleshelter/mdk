@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #20b4cc;
+    padding: 1%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0.8rem 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 95vw;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+.left {
+    width: 20%;
+    padding: 5px;
+}
+
+.center {
+    width: 45%;
+}
+
+.right {
+    width: 28%;
+    align-self: start;
+}
+
+.center,
+.right {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 10px 20px;
+}
+
+.hr1 {
+    border: 0.13rem dashed #fff;
+margin: 3rem 0;
+}
+
+.layout {
+    background: #c6e5e8;
+    border-radius: 5px;
+    padding: 5px 5px 10px 10px;
+    margin: 3rem 0;
+    font-size: 1rem;
+    color: #1d1d1d;
+}
+
+.layout__header {
+    background: #2391a0;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.head {
+    color: #fff;
+    background-color: #3bafc4;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    padding: 2px;
+    font-weight: 600;
+}
+
+.hr2 {
+border: 0.11rem dashed #38f0f0;
+margin: 3rem 0;
+}
+
+.value {
+    margin-left: 2rem;
+}
+
+.wrap {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading {
+    color: #1c879b;
+}
+
+.block {
+    background: #c6e5e8;
+    border: 2px solid #1c879b;
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+    font-weight: 600;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.block__item {
+    background: #1c879b;
+    padding: 20px;
+}
+
+.fd-row {
+    flex-direction: row;
+}
+
+.fd-row-rev{
+    flex-direction: row-reverse;
+}
+
+.fd-column{
+    flex-direction: column;
+}
+
+.fd-column-rev{
+    flex-direction: column-reverse;
+}
+
+.fw-wrap {
+    flex-wrap: wrap;
+}
+
+.fw-nowrap {
+    flex-wrap: nowrap;
+}
+
+.fw-wrap-rev{
+    flex-wrap: wrap-reverse;
+}
+
+.jc-fs {
+    justify-content: flex-start;
+    width: 300px;
+}
+.jc-fe {
+    justify-content: flex-end;
+    width: 300px;
+}
+.jc-c {
+    justify-content: center;
+    width: 350px;
+}
+.jc-sb {
+    justify-content: space-between;
+    width: 350px;
+}
+.jc-sa {
+    justify-content: space-around;
+    width: 350px;
+}
+.jc-se {
+    justify-content: space-evenly;
+    width: 350px;
+}
+
+.ai-s {
+    align-items: stretch;
+    height: 150px;
+}
+.ai-fa {
+    align-items: start;
+    height: 150px;
+}
+.ai-fe {
+    align-items: end;
+    height: 150px;
+}
+.ai-c {
+    align-items: center;
+    height: 150px;
+    width: 250px;
+}
+.ai-b {
+    align-items: baseline;
+    height: 150px;
+    width: 400px;
+}
+
+.item1{
+    width: 100px;
+    height: 100px;
+}
+.item2{
+    width: 110px;
+    height: 50px;
+}
+.item3{
+    width: 100px;
+    height: 70px;
+}
+
+.bl1 {
+    order: 5;
+}
+.b2 {
+    order: 4;
+}
+.b3 {
+    order: 2;
+}
+.b4 {
+    order: 1;
+}
+.b5 {
+    order: 3;
+}
+
+.fl-gr{
+    width: 350px;
+}
+.item1{
+    flex-grow: 2;
+}
+
+.q1{
+    /* width: 100%; */
+    height: 170px;
+}
+.qai-fs {
+    align-items: flex-start;
+}
+.qas-s {
+    align-self: stretch;
+}
+.qai-e {
+    align-items: end;
+}
+.qas-fs {
+    align-self: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

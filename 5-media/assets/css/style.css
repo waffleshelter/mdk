@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/merriweather-v30-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* merriweather-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/merriweather-v30-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 22px;
+    line-height: 1.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+}
+.header {
+    text-align: center;
+    background: #fff;
+    height: 100%;
+
+}
+.header_top {
+    padding: 15px;
+}
+.logo_link {
+}
+.logo-img {
+    width: 15%;
+}
+.hedder_bottom {
+    background: #447e6856;
+}
+.nav {
+    padding: 20px;
+}
+.header__menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.menu-item {
+}
+.menu-link {
+    text-decoration: none;
+    color: #2f605a;
+    font-family: "Playfair Display SC", serif;
+    transition: all 0,7s;
+}
+.menu-link:hover{
+    color: #b48819;
+}
+main{
+    width: 80%;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+    padding: 1% 2%;
+    flex: 1 1 auto;
+}
+.section{
+    padding: 20px;
+    border-bottom: 1px solid #2f605a;   
+}
+.section-title{
+    color: rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 8px 30px #010101;
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 20px;
+    font-family: "Playfair Display SC", serif;
+}
+
+.section-subtitle{
+    font-size: 1.5em;
+    margin: 15px;
+    color: #1b433e;
+    text-shadow: 1px 8px 40px #b48819;
+}
+
+.person__gallery {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 0 20px;
+}
+
+#person img {
+    border-radius: 10px;
+}
+
+summary {
+    color: #2f605a;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.footer {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-img {
+    max-width: 250px;
+    max-height: 140px;
+    object-fit: cover;
+    margin: 0 50px;
+}
+
+.footer-img:hover {
+    /*filter: blur(1px); /*размытие изображение*/
+    /* filter: contrast(250%); */
+    filter: drop-shadow(0px 0px 50px #2f2f2f);
+    /* filter: grayscale(100); */
+    /* filter: hue-rotate(30deg); поворот по цветовому кругу*/
+    /* filter: opacity(50%); */
+    /* filter: saturate(350%); */
+    /* filter: blur(1px) opacity(20%) saturate(350%); */
+}
+
+.footem__menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 30px;
+    list-style: nonne;
+    font-family: "Playfair Display SC", serif;
+}
+
+.footem__menu a {
+    text-decoration: none;
+    color: #2f605a;
+    transition: all 0.7s;
+}
+
+.footem__menu a:hover {
+    color: #dba452;
+}
+
+.details {
+    position: relative;
+    display: block;
+    max-width: 650px;
+    margin: 0 auto 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 5px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.details::after {
+    /* z-index: 12; */
+    position: absolute;
+    right: 24px;
+    top: 20px;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-right: 3px solid #425995;
+    border-bottom: 3px solid #425995;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: 0.3s;
+}
+
+/* .details[open] .details__content {
+    margin-top: 0;
+} */
+
+.details[open]::after{
+    transform: rotate(45deg);
+}
+
+.details[open] {
+    padding-bottom: 100px;
+}
+
+.details[open] .details__title {
+    margin-bottom: 32px;
+}
+
+.details__title {
+    background: #fff;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 20px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.details__title::-webkit-details-marker {
+    display: none;
+}
+
+.details__content {
+    padding: 0 32px;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.details__content p:last-child {
+    margin-bottom: 0;
+}
+
+.details__content p:first-child {
+    margin-top: 0;
+}
+
+/* страница видео */
+
+.video {
+    width: 600px;
+    height: 400px;
+    margin: 20px 30px;
+}
+
+/* страница музыки */
+
+.img-music {
+    max-width: 250px;
+    max-height: 140px;
+    object-fit: cover;
+    margin: 0 50px;
+}
+
+.play-list {
+    /* background-image: url(../img/supernova.png);
+    padding: %; */
+}
+
+.main-music {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+    
+}
+
+.name-track {
+    font-style: 30px;
+    margin: 20px 0;
+    font-family: 'Merriweather', sans-serif;
+}
+
+audio::-webkit-media-controls-panel{
+    background-image: url(../img/supernova.png);
+    height: auto;
+    width: auto;
+    
+}
+
+/* audio::-webkit-media-controls-play-button{
+    background: #447e68;
+    border-radius: 50%;
+} */
+
+/* для разных браузеров будет разная оформление */
+
+audio::-webkit-media-controls-play-button:hover{
+    background: #d18719;
+    border-radius: 50%;
+}
+
+/* audio::-webkit-media-controls-mute-button{
+    background: #d18719;
+    border-radius: 50%;
+} */
+
+
+
+    /* страница info */
+.info {
+    border: none;
+    text-align: center;
+}
+
+.info__table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse; /*заставляет ячейки схлопываться*/
+    margin-bottom: 50px;
+}
+
+.head {
+    color: #2f605a;
+}
+
+.col, .head {
+    padding: 15px;
+    border-bottom: 1px solid #2f605a;
+}
+
+.row {
+    transition: all 0.8s;
+}
+
+.row:hover {
+    color: #dba452;
+    background: #ffffff56;
+}

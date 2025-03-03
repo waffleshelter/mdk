@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайна серых источников</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_top">
+                <a href="index.html" class="logo_link">
+                    <img src="assets\img\logo.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+            <div class="hedder_bottom">
+                <nav class="nav">
+                    <ul class="header__menu">
+                        <li class="menu-item"><a href="index.html" class="menu-link">Главная</a></li>
+                        <li class="menu-item"><a href="index.html#person" class="menu-link">Персонажи и актёры</a></li>
+                        <li class="menu-item"><a href="index.html#series" class="menu-link">Серии с описанием</a></li>
+                        <li class="menu-item"><a href="video.html" class="menu-link">Эпизоды</a></li>
+                        <li class="menu-item"><a href="music.html" class="menu-link">Музыка</a></li>
+                        <li class="menu-item"><a href="info.html" class="menu-link">Информация</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <h1 class="section-title">Трейлеры и тизеры</h1>
+            <video class="video" controls poster="assets/img/preview1.png">
+                <source src="assets/media/video1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                Тег video не поддерживается вашим браузером
+                <a href="assets/media/video1.mp4">Скачайте видео без СМС и регистрации</a>
+            </video>
+            <video class="video" controls>
+                <source src="assets/media/video3.webm" type="video/webm">
+                <source src="assets/media/video3.mp4" type="video/mp4">
+                <source src="assets/media/video3.avi" type="video/avi">
+            </video>
+            <video class="video" controls>
+                <source src="assets/media/video3.webm" type="video/webm">
+                <source src="assets/media/video3.mp4" type="video/mp4">
+                <source src="assets/media/video3.avi" type="video/avi">
+            </video>
+            <!-- <iframe src="video" src="https://rutube.ru/video/f3b615db135287a64584737e664e1e4b/" allowfullscreen></iframe> -->
+             <!-- <embed src="assets/media/video4.mp4" type="video/mp4" class="video" play="false"> использовать в последнем случае -->
+                <iframe width="560" height="315" src="https://rutube.ru/video/f3b615db135287a64584737e664e1e4b/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </main>
+        <footer class="footer">
+            <figure class="footer__photo">
+                <img src="assets/img/footer1.PNG" alt="photo" class="footer-img">
+                <img src="assets/img/footer2.jpg" alt="photo" class="footer-img">
+                <img src="assets/img/footer3.jpg" alt="photo" class="footer-img">
+                <img src="assets/img/footer4.jpg" alt="photo" class="footer-img">
+            </figure>
+            <nav class="footer__nav">
+                <ul class="footem__menu">
+                    <li><a href="video.html">Эпизоды</a></li>
+                    <li><a href="music.html">Музыка</a></li>
+                    <li><a href="info.html">Информация</a></li>
+                </ul>
+            </nav>
+           <p>© Disney, Все права защищены</p>
+        </footer>
+    </div>
+</body>
+</html>

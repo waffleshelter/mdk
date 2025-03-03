@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+    color: #212529;
+    border-collapse: collapse; /*убираем расстояние между ячейками (схлопываем ячейки*/
+}
+
+td, th{
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    vertical-align: bottom; /*вертикальное выравнивание*/
+}
+
+.fa-xmark {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+}

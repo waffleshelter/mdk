@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Составить резюме онлайн за 10 минут</h1>
+        <p>Начните составлять резюме онлайн, введя информацию в форму для ввода данных. Пользуйтесь подсказками, чтобы
+            правильно заполнить шаблон и скачать получившийся бланк в нужном формате. По завершению можно отправить
+            резюме.</p>
+        <form action="#" class="form">
+            <h3 class="block-title">ФИО</h3>
+            <div class="form__block">
+                <p class="info">
+                    <i class="fa-solid fa-circle-info"></i>Добавьте фотографию к резюме, она значительно увеличит
+                    привлекательность вашего бланка
+                </p>
+                <div class="form__block-item">
+                    <label for="lname">Фамилия*</label>
+                    <input type="text" id="lname" placeholder="Архиневолокоточерепопиндриковская" required
+                        maxlength="36">
+                </div>
+                <div class="form__block-item">
+                    <label for="lname">Имя*</label>
+                    <input type="text" id="name" placeholder="Абдурахмангаджи" required maxlength="20">
+                </div>
+                <div class="form__block-item">
+                    <label for="lname">Отчество</label>
+                    <input type="text" id="fname" placeholder="Константинова-Красильникова Капитолина Константиновна"
+                        required maxlength="25">
+                </div>
+                <div class="form__block-item">
+                    <label for="photo">Фото</label>
+                    <input type="file" id="photo" accept="image/jpeg, image/png, image/webp">
+                </div>
+            </div>
+            <h3 class="block-title">Данные о вакансии</h3>
+            <div class="form__block">
+                <p class="info">
+                    <i class="fa-solid fa-circle-info"></i>Добавьте информацию о должности, зарплате, укажите занятость
+                    и график работы.
+                </p>
+                <div class="form__block-item">
+                    <label for="job">Какую должность вы хотите занимать?</label>
+                    <input type="text" id="job" placeholder="Администратор" required>
+                </div>
+                <div class="form__block-item">
+                    <label for="salary">Желаемая зарплата (руб.)</label>
+                    <select name="salary" id="salary">
+                        <option value="20000-40000">20000-40000</option>
+                        <option value="20000-40000">40000-60000</option>
+                        <option value="20000-40000">60000-80000</option>
+                        <option value="20000-40000">80000-100000</option>
+                        <option value="20000-40000">100000-120000</option>
+                    </select>
+                </div>
+                <div class="form__block-item">
+                    <label for="job-type">Тип занятости (выберете удерживая ctrl)</label>
+                    <select name="job-type" id="job-type" multiple>
+                        <option value="11">Полная</option>
+                        <option value="12">Частичная</option>
+                        <option value="13">Удаленная работа</option>
+                        <option value="14">Стажировка</option>
+                    </select>
+                </div>
+                <div class="form__block-item">
+                    <label for="job-time">График работы</label>
+                    <select name="job-time" id="job-tipe" multiple>
+                        <option value="21">Полный день</option>
+                        <option value="22">Неполный день</option>
+                        <option value="23">Гибкий график</option>
+                        <option value="24">Ненормированный</option>
+                    </select>
+                </div>
+            </div>
+            <h3 class="block-title">Контактная информация</h3>
+            <div class="form__block">
+                <p class="info">
+                    <i class="fa-solid fa-circle-info"></i>Обязательно добавьте номер телефона и укажите электронную почту, так работодателю будет легче с Вами связаться.
+                </p>
+                <div class="form__block-item">
+                    <label for="phone">Телефон для связи*</label>
+                    <input type="tel" name="phone" id="phone" required maxlength="11" placeholder="89924253536">
+                </div>
+                <div class="form__block-item">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" name="email" id="email" required placeholder="login@mail.ru">
+                </div>
+                <div class="form__block-item">
+                    <label>Допустимые способы связи</label>
+                    <div class="row">
+                        <div class="row-item">
+                            <input type="checkbox" checked>
+                            <span class="call">Whatsapp</span>
+                        </div>
+                        <div class="row-item">
+                            <input type="checkbox">
+                            <span class="call">Viber</span>
+                        </div>
+                        <div class="row-item">
+                            <input type="checkbox">
+                            <span class="call">Telegram</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="block-title">Личная информация</h3>
+            <div class="form__block">
+                <p class="info">
+                    <i class="fa-solid fa-circle-info"></i>Укажите город проживания, дату рождения, пол, семейное положение и выберите уровень образования из списка.
+                </p>
+                <div class="form__block-item">
+                    <label for="dob">Дата рождения</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div class="form__block-item">
+                    <label for="city">Город проживания</label>
+                    <input type="text" id="city" placeholder="Екатеринбург">
+                </div>
+                <div class="form__block-item">
+                    <label for="citizenship">Гражданство</label>
+                    <input type="text" id="citizenship" placeholder="РФ">
+                </div>
+                <div class="form__block-item">
+                    <label for="education">Образование</label>
+                    <select name="education" id="education">
+                        <option value="31">Неполное</option>
+                        <option value="32">Полное</option>
+                        <option value="33">Средняя образования</option>
+                        <option value="34">Крутой пацан</option>
+                    </select>
+                </div>
+                <div class="form__block-item">
+                    <div class="row">
+                        <label>Пол</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">мужской</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">женский</label>
+                    </div>
+                </div>
+                <div class="form__block-item">
+                    <div class="row">
+                        <label>Семейное положение</label>
+                        <input type="radio" name="family-status" id="male-single">
+                        <label for="male-single">холост</label>
+                        <input type="radio" name="family-status" id="male-married">
+                        <label for="male-married">женат</label>
+                        <input type="radio" name="family-status" id="femele-single">
+                        <label for="femele-single">не замужем</label>
+                        <input type="radio" name="family-status" id="female-married">
+                        <label for="female-married">замужем</label>
+                    </div>
+                </div>
+            </div>
+            <h3 class="block-title">Личная информация</h3>
+            <div class="form__block">
+                <p class="info">
+                    <i class="fa-solid fa-circle-info"></i>Укажите свой предыдущий опыт работы, чтобы работодатель смог быстрее принять решение
+                </p>
+                <div class="form__block-item">
+                        <label for="experience">Стаж на предыдущей работе (лет)</label>
+                        <input type="number" name="experience" id="experience" min="0" max="50" value="1">
+                </div>
+                <div class="form__block-item">
+                    <label for="work">Работаете ли вы в настоящее время?</label>
+                    <select name="work" id="work">
+                        <option value="yes">да</option>
+                        <option value="no">нет</option>
+                    </select>
+            </div>
+            <div class="form__block-item full">
+                <label for="company">Название организации где работаете/работали</label>
+                <input type="text" id="company" placeholder="ООО Газпром">
+                
+        </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

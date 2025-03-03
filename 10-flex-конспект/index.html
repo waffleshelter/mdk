@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конспект по flex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="img/logo.png" alt="logo">
+            <div class="hr1"></div>
+            <img src="img/img1.png" alt="image">
+            <div class="hr1"></div>
+            <div class="layout">
+                <div class="layout__header">
+                    <h3>HTML</h3>
+                </div>
+                <code>
+                    &lt;div class="container"> <br>
+                    &lt;div class="item1"&gt;&lt;/div&gt; <br>
+                    &lt;div class="item2"&gt;&lt;/div&gt; <br>
+                    &lt;div class="item3"&gt;&lt;/div&gt; <br>
+                    &lt;div class="item4"&gt;&lt;/div&gt; <br>
+                    &lt;/div&gt;</code>
+            </div>
+            <div class="layout">
+                <div class="layout__header">
+                    <h3>CSS</h3>
+                </div>
+                <p class="strong">.container {display: flex}</p>
+                <p>Когда мы задаём какому-то элементу значение flex для свойства display, мы превращаем этот элемент в
+                    флекс-контейнер. Внутри него начинает действовать флекс-контекст, его дочерние элементы начинают
+                    подчиняться свойствам флексбокса.</p>
+            </div>
+            <div class="layout">
+                <div class="layout__header">
+                    <h3>CSS</h3>
+                </div>
+                <p class="strong">.container {display: inline-flex}</p>
+                <p>Когда мы задаём какому-то элементу значение flex для свойства display, мы превращаем этот элемент в
+                    флекс-контейнер. Внутри него начинает действовать флекс-контекст, его дочерние элементы начинают
+                    подчиняться свойствам флексбокса.</p>
+            </div>
+        </div>
+        <div class="center">
+            <div class="head">
+                <h2>Основные свойства</h2>
+            </div>
+            <div class="term">
+                <p><span class="strong">Флекс-контейнер:</span> элемент, к которому применяется свойство display: flex.
+                    Вложенные в него элементы подчиняются правилам раскладки флексов.</p>
+                <p><span class="strong">Флекс-элемент:</span> элемент, вложенный во флекс-контейнер.</p>
+                <p><span class="strong">Основная ось:</span> основная направляющая флекс-контейнера, вдоль которой
+                    располагаются флекс-элементы.</p>
+                <p><span class="strong">Поперечная (побочная, перпендикулярная) ось:</span> ось, идущая перпендикулярно
+                    основной.
+                    оси</p>
+                <img src="img/img2.png" alt="osi_x">
+            </div>
+            <div class="hr2">
+            </div>
+            <div class="props">
+                <p><span class="strong">Flex-direction -</span>свойство управления направлением основной и поперечной
+                    осей.
+                </p>
+                <p><span class="strong">.container {flex-direction: row;} -</span>значение по умолчанию
+                </p>
+                <p>Возможные значения:</p>
+                <ul class="value">
+                    <li>row — основная ось идёт горизонтально слева направо, поперечная ось идёт вертикально сверху
+                        вниз.</li>
+                    <li>row-reverse — основная ось идёт горизонтально справа налево, поперечная ось идёт вертикально
+                        сверху вниз.</li>
+                    <li>column — основная ось идёт вертикально сверху вниз, поперечная ось идёт горизонтально слева
+                        направо.</li>
+                    <li>column-reverse — основная ось идёт вертикально снизу вверх, поперечная ось идёт горизонтально
+                        слева направо.</li>
+                </ul>
+                <div class="wrap">
+                    <div class="wrap__item">
+                        <p class="heading">row</p>
+                        <div class="block fd-row">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">row-reversed</p>
+                        <div class="block fd-row-rev">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">column</p>
+                        <div class="block fd-column">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">column-reverse</p>
+                        <div class="block fd-column-rev">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr2"></div>
+            <div class="props">
+                <p><span class="strong">Flex-wrap</span>перенос элементов внутри контейнера.</p>
+                <p><span class="strong">.container {flex-wrap: nowrap;}</span> - значение по умолчанию</p>
+                <p>Установив значение wrap, мы можем изменить это поведение, и флекс-элементы будут иметь возможность
+                    перенестись в новый ряд, если не влезают в одну линию в рамках родителя. Ещё одно возможное значение
+                    — wrap-reverse. В этом случае элементы будут располагаться снизу вверх, заполнив собой сперва нижний
+                    ряд, а те, что не влезли, перепрыгнут в ряд выше.</p>
+                <div class="wrap">
+                    <div class="wrap__item">
+                        <p class="heading">wrap</p>
+                        <div class="block fw-wrap">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">nowrap</p>
+                        <div class="block fw-nowrap">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                            <div class="block__item">4</div>
+                            <div class="block__item">5</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">wrap-reverse</p>
+                        <div class="block fw-wrap-rev">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                            <div class="block__item">4</div>
+                            <div class="block__item">5</div>
+                            <div class="block__item">6</div>
+                            <div class="block__item">7</div>
+                            <div class="block__item">8</div>
+                            <div class="block__item">9</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr2"></div>
+            <div class="props">
+                <p><span class="strong">Flex-flow</span> - это свойство-шорткат для одновременного определения значений
+                    свойств flex-direction и flex-wrap.</p>
+                <p>.container { display: flex; <span class="strong">flex-flow: column wrap;</span> }</p>
+            </div>
+            <div class="hr2"></div>
+            <div class="props">
+                <p><span class="strong">Justify-content</span> - свойство позволяет выравнивать флекс-элементы внутри
+                    флекс-контейнера по основной/главной оси (по горизонтали).</p>
+                <p><span class="strong">.container {justify-content: flex-start}</span> - значение по умолчанию</p>
+                <p>Возможные значения:</p>
+                <ul class="value">
+                    <li>flex-start - элементы прижимаются к краю, от которого начинается основная ось.</li>
+                    <li>flex-end - элементы прижимаются к краю, у которого основная ось заканчивается.</li>
+                    <li>center - элементы выстраиваются по центру родителя.</li>
+                    <li>space-between — крайние элементы прижимаются к краям родителя, оставшиеся выстраиваются внутри
+                        контейнера равномерно, так, чтобы между ними были одинаковые отступы.</li>
+                    <li>
+                        space-around — свободное пространство делится поровну между элементами и по половине от этой
+                        доли размещается по бокам от каждого элемента. Таким образом, между соседними элементами будет
+                        равное расстояние, а снаружи крайних элементов — по половине этого расстояния.
+                    </li>
+                    <li>space-evenly — свободное место будет распределено так, чтобы расстояние между любыми двумя
+                        элементами было одинаковым и расстояние от крайних элементов до края было таким же.</li>
+                </ul>
+                <div class="wrap">
+                    <div class="wrap__item">
+                        <p class="heading">flex-start</p>
+                        <div class="block jc-fs">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">flex-end</p>
+                        <div class="block jc-fe">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">center</p>
+                        <div class="block jc-c">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">space-between</p>
+                        <div class="block jc-sb">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">space-around</p>
+                        <div class="block jc-sa">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">space-evenly</p>
+                        <div class="block jc-se">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr2"></div>
+            <div class="props">
+                <p><span class="strong">Align-items</span> - свойство выравнивания элементов внутри контейнера по
+                    поперечной оси (по вертикали).</p>
+                <p><span class="strong">.container {align-items: stretch}</span> - значение по умолчанию</p>
+                <p>Возможные значения:</p>
+                <ul class="value">
+                    <li>stretch (значение по умолчанию) — элементы растягиваются вдоль поперечной оси так, чтобы
+                        заполнить всего родителя. Это очень удобно, если вы делаете двухколоночный макет. Раньше
+                        приходилось при помощи разных костылей добиваться одинаковой высоты, а теперь достаточно сделать
+                        контейнер флексом, и колонки по умолчанию будут одной высоты.</li>
+                    <li>flex-start или start — элементы выстраиваются у начала поперечной оси. Разница между ними лишь в
+                        том, что второе значение «уважает» направление чтения выбранного языка.</li>
+                    <li>flex-end или end — элементы выстраиваются у конца поперечной оси. Разница между первым и вторым
+                        значениями аналогична предыдущему пункту.</li>
+                    <li>center — элементы выстраиваются по центру поперечной оси.</li>
+                    <li>
+                        baseline — элементы выравниваются по базовой линии текста. «Базовая линия» — baseline —
+                        воображаемая линия, проходящая по нижнему краю знаков шрифта (без учёта выносных элементов).
+                    </li>
+                </ul>
+                <div class="wrap">
+                    <div class="wrap__item">
+                        <p class="heading">strtech</p>
+                        <div class="block ai-s">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">flex-start или start</p>
+                        <div class="block ai-fa">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">flex-end или end</p>
+                        <div class="block ai-fe">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">center</p>
+                        <div class="block ai-c">
+                            <div class="block__item">1</div>
+                            <div class="block__item">2</div>
+                            <div class="block__item">3</div>
+                        </div>
+                    </div>
+                    <div class="wrap__item">
+                        <p class="heading">baseline</p>
+                        <div class="block ai-b">
+                            <div class="block__item item1">1</div>
+                            <div class="block__item item2">20</div>
+                            <div class="block__item item3">300</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr2"></div>
+        </div>
+        <div class="right">
+            <div class="head">
+                <h2>Дополнительные свойства</h2>
+            </div>
+            <div class="term">
+                <p><span class="strong">Gap</span> - c помощью этого свойства можно с лёгкостью задавать отступы между
+                    строками и столбцами (между элементами). Является краткой записью свойств row-gap и column-gap.
+                </p>
+                <p>Может иметь одно или два значения. Если указано только одно, то column-gap автоматически равен
+                    row-gap. Если указаны два значения, то первое будет задавать отступы между рядами (row-gap), а
+                    второе — между колонками (column-gap).</p>
+                <img src="img/img3.png" alt="gap">
+            </div>
+            <div class="hr2"></div>
+            <div class="term">
+                <p><span class="strong">Order</span> - меняет порядок отображения флекс-элементов внутри
+                    флекс-контейнера.
+                </p>
+                <p>По умолчанию элементы отображаются в том порядке, в котором они расположены в разметке, а значение
+                    свойства order равно 0. Значение задаётся в виде целого отрицательного или положительного числа.
+                    Элементы встают по возрастающей.</p>
+                <div class="wrap">
+                    <div class="wrap__item">
+                        <p class="heading">.order1 {order: 5}</p>
+                        <div class="block order">
+                            <div class="block__item b1">1<br>(order-5)</div>
+                            <div class="block__item b2">2<br>(order-4)</div>
+                            <div class="block__item b3">3<br>(order-2)</div>
+                            <div class="block__item b4">4<br>(order-1)</div>
+                            <div class="block__item b5">5<br>(order-3)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr2"></div>
+            <div class="term">
+                <p><span class="strong">Flex-grow</span> - указывает, может ли вырастать флекс-элемент при наличии
+                    свободного места, и насколько.
+                </p>
+                <p>По умолчанию значение равно 0. Значением может быть любое положительное целое число (включая 0). Если
+                    у всех флекс-элементов будет прописано flex-grow: 1, то свободное пространство в контейнере будет
+                    равномерно распределено между всеми. Если при этом одному из элементов мы зададим flex-grow: 2, то
+                    он постарается занять в два раза больше свободного места, чем его соседи.</p>
+                <div class="wrap">
+                    <div class="wrap__item">
+                        <p class="heading">.item {flex-grow: 2}</p>
+                        <div class="block fl-gr">
+                            <div class="block__item item1">1</div>
+                            <div class="block__item ">2</div>
+                            <div class="block__item ">3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr2"></div>
+                <div class="term">
+                    <p><span class="strong">Flex-shrink</span> - полностью противоположно свойству flex-grow. Если в
+                        контейнере не хватает места для расположения всех элементов без изменения размеров, то свойство
+                        flex-shrink указывает, в каких пропорциях элемент будет уменьшаться.
+                    </p>
+                    <p>Чем больше значение у этого свойства, тем быстрее элемент будет сжиматься по сравнению с
+                        соседями, имеющими меньшее значение. Значение по умолчанию — 1. Значением может быть любое целое
+                        положительное число (включая 0).</p>
+                </div>
+                <div class="hr2"></div>
+                <div class="term">
+                    <p><span class="strong">Align-self</span> - выравнивает флекс-элементы текущей строки.
+                    </p>
+                    <p>Отвечает за выравнивание отдельно взятого flex-элемента по высоте flex-контейнера. Переопределяет
+                        выравнивание, заданное align-items.</p>
+                    <p>Возможные значения:</p>
+                    <ul class="value">
+                        <li>auto - значение по умолчанию. Flex-элемент использует выравнивание, указанное в свойстве
+                            align-items flex-контейнера.</li>
+                        <li>flex-start - верхний край flex-элемента помещается вплотную с flex-линией (или на
+                            расстоянии, с учетом заданных полей margin и рамок border элемента), проходящей через начало
+                            поперечной оси.</li>
+                        <li>flex-end - нижний край flex-элемента помещается вплотную с flex-линией (или на расстоянии, с
+                            учетом заданных полей margin и рамок border элемента), проходящей через конец поперечной
+                            оси.</li>
+                        <li>center - поля flex-элемента центрируется по поперечной оси в пределах flex-линии.</li>
+                        <li>
+                            baseline - fLex-элемент выравнивается по базовой линии.
+                            </li>
+                            <li>stretch - сли поперечный размер flex-элемента вычисляется как auto и ни одно из поперечных
+                                значений margin не равно auto, элемент растягивается. Значение по умолчанию.</li>
+                    </ul>
+                    <div class="wrap">
+                        <div class="wrap__item">
+                            <p class="heading">1,2,4 - align-items:flex-start, 3 - align-self: stretch;</p>
+                            <div class="block q1 ai-s">
+                                <div class="block__item qai-fs">1</div>
+                                <div class="block__item qai-fs">2</div>
+                                <div class="block__item qas-s">3</div>
+                                <div class="block__item qai-fs">4</div>
+                            </div>
+                        </div>
+                        <div class="wrap__item">
+                            <p class="heading">1,2 - align-items:end, 3 - align-self: flex-start;</p>
+                            <div class="block q1 ai-fe">
+                                <div class="block__item qai-e">1</div>
+                                <div class="block__item qai-e">2</div>
+                                <div class="block__item qas-fs">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr2"></div>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background: #84889c;
+    font-family: "Roboto", sans-serif;
+}
+
+.form__title{
+    text-transform: uppercase;
+    color: #ebd0ce;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 35px;
+}
+
+.registration-form{
+    padding: 25px;
+    background: #545871;
+    width: 500px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.text{
+    display: block;
+    color: #9597a6;
+    margin-bottom: 5px;
+    
+}
+.input__wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__wrap .input__item{
+    width: 50%;
+}
+.input__wrap .input__item:first-child{
+    margin-right:10px ;
+}
+
+.input__item{
+    margin-bottom: 20px;
+}
+.gender{
+    display: flex;
+    justify-content: space-around;
+}
+
+.form__wrap input[type="text"],
+.form__wrap input[type="email"]{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #9597a6;
+    outline: none;
+}
+
+#city, #city, #lname{
+    padding: 10px;
+}
+
+/* кнопка по умолчанию */
+.btn {
+    width: 100%;
+    background: #ebd0ce;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* кнопка при наведении */
+.btn:hover{
+    background: #ffd5d2;
+}
+
+/* кнопка при нажатии */
+.btn:active{
+    background: #84889c;
+}
+
+/* кнопка для нищих без мышек */
+/* .bnt:focus {
+    background: #ffd5d2;
+} */
+
+.avatar{
+    background-image: url(../img/avatar.png);
+    background-repeat:no-repeat;
+    padding: 10px 0 10px 35px;
+    background-size: 16px 16px;
+    background-position: 10px 10px;
+}
+
+.mail{
+    background-image: url(../img/mail.png);
+    background-repeat:no-repeat;
+    padding: 10px 0 10px 35px;
+    background-size: 18px 16px;
+    background-position: 10px 10px;
+}
+
+.input:focus{
+    background: #ebd0ce;
+}
+
+.gender {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+
+.input-radio:checked ~ span {
+    background: #ebd0ce;
+}
+

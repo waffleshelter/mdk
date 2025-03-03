@@ -1,0 +1,103 @@
+body {
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #18191c;
+    color: #dadada;
+    font-size: 24px;
+}
+
+.color, .colors{
+    width: 600px;
+    list-style: none;
+}
+
+.color__item, .colors__item{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #e7eaef;
+}
+
+/* первый элемент */
+.color .color__item:first-child{
+    background-color: #217074;
+}
+
+/* второй элемент */
+.color .color__item:nth-child(2){
+    background-color: #377458;
+}
+
+/* с 3 по 5 элемент */
+.color .color__item:nth-child(n+3):nth-child(-n+5){
+    background-color: #808080;
+}
+
+/* шестой элемент или предпоследний*/
+/* .color .color__item:nth-child(6){
+    background-color: #e67575;
+} */
+.color .color__item:nth-last-child(2){
+    background-color: #e67575;
+}
+
+/* последний элемент или 7 элемент */
+.color .color__item:last-child{
+    background-color: #d87511;
+}
+
+/* с 4 по 6 */
+.colors .colors__item:nth-child(n+4):nth-child(-n+6){
+    background-color: #d87511;
+}
+
+.colors .colors__item:last-child, .colors .colors__item:nth-child(2){
+    background-color: #e67575;
+}
+
+.line {
+    list-style: none;
+    color: #090909;
+}
+
+.line li {
+    display: inline-block;
+    background-color: #e7eaef;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.red li{
+    border-radius: 50%;
+}
+
+/* каждый третий */
+.red li:nth-child(3n){
+    background-color: #e67575;
+}
+
+/* все, начиная с 6 */
+.red li:nth-child(n+6){
+    background-color: #377458;
+}
+
+/* со 2 по 7 */
+.orange li:nth-child(n+2):nth-child(-n+7){
+    background-color: #d87511;
+}
+
+/* 9 и 10 */
+.orange li:nth-child(n+9):nth-child(-n+10){
+    background-color: #377458;
+}
+
+/* все четные */
+.green li:nth_child(even){
+    background-color: #e67575;
+}
+
+/* все нечетные */
+.green li:nth_child(odd){
+    background-color: #377458;
+}

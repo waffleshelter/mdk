@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фриланс</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-menu">
+            <h1 class="title">weblance</h1>
+            <ul class="menu">
+                <li class="menu-item"><a href="" class="menu-bottom"><i class="fa-solid fa-file-contract"></i>Портфолио
+                </li></a>
+                <li class="menu-item"><a href="" class="menu-bottom"><i class="fa-solid fa-message"></i>Общение</li></a>
+                <li class="menu-item"><a href="" class="menu-bottom"><i class="fa-solid fa-user"></i>Профиль</li></a>
+                <li class="menu-item"><a href="" class="menu-bottom"><i class="fa-solid fa-link"></i>Ссылки</li></a>
+                <li class="menu-item"><a href="" class="menu-bottom"><i class="fa-solid fa-gear"></i>Настройки</li></a>
+            </ul>
+        </div>
+        <div class="main-content">
+            <header class="header">
+                <div class="search">
+                    <input type="text" id="search" placeholder="Найти проект или заказчика" class="search-img">
+                </div>
+                <div class="button_and_avatar">
+                    <a href=""><i class="fa-solid fa-bell fa-header"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope fa-header"></i></a>
+
+                    <a href=""><i class="fa-solid fa-user fa-header"></i></a>
+                    <div class="img-avatar"></div>
+                    <p class="name-user">Рустам Хомяков</p>
+                </div>
+            </header>
+            <div class="form">
+                <div class="left">
+                    <div class="layout main">
+                        <h3>Настройки профиля</h3>
+                        <p>Заполните информацию о себе</p>
+                    </div>
+                    <div class="layout">
+                        <h3>Уведомления</h3>
+                        <p>Прочтите сообщение от заказчиков</p>
+                    </div>
+                    <div class="layout">
+                        <h3>Данные о проектах</h3>
+                        <p>Просмотрите статус выполнения проектов</p>
+                    </div>
+                    <div class="layout">
+                        <h3>Пароль и безопасность</h3>
+                        <p>Задайте или измените пароль</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="layout layout-img">
+                        <div class="img-form"></div>
+                        <div class="form-text">
+                            <h3>Загрузить новое фото</h3>
+                            <p>Вы можете загрузить изображение размером не более 10Мб</p>
+                        </div>
+                        <div class="form__block-item">
+                            <input type="file" id="photo" accept="image/jpeg, image/png, image/webp">
+                        </div>
+                        <input type="submit" value="Сохранить" class="btn">
+                    </div>
+                    <form class="layout layout-form">
+                        <h3>Заполните информацию о себе</h3>
+                        <div class="form__block-item">
+                            <label for="lname">Имя Фамилия*</label>
+                            <input type="text" id="lname" placeholder="Рустам Рустамов" required maxlength="72">
+                        </div>
+                        <div class="form__block-item">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email" required placeholder="login@mail.ru">
+                        </div>
+                        <div class="form__block-item">
+                            <label for="city">Страна</label>
+                            <select name="education" id="education">
+                                <option value="31">Россия</option>
+                                <option value="32">Белорусия</option>
+                                <option value="33">Казахстан</option>
+                            </select>
+                        </div>
+                        <div class="form__block-item">
+                            <label for="city">Город</label>
+                            <input type="text" id="city" placeholder="Екатеринбург">
+                        </div>
+                        <div class="form__block-item full">
+                            <label for="company">Адрес проживания</label>
+                            <input type="text" id="address" placeholder="ул. Космонавтов 50">
+                        </div>
+                        <div class="form__block-item full">
+                            <h>Отметьте какими технологиями/языками вы владеете</h>
+                            <div class="row"><label>
+                                    <input type="checkbox" class="check-box" checked>
+                                    <span class="c-style"></span>
+                                    HTML
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="check-box" checked>
+                                    <span class="c-style"></span>
+                                    CSS
+                                    <label>
+                                        <input type="checkbox" class="check-box" checked>
+                                        <span class="c-style"></span>
+                                        JavaScript
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        SASS
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        React
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        Phyton
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        MySQL
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        Wordpress
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        Webpack
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        Gulp
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" class="check-box">
+                                        <span class="c-style"></span>
+                                        Node
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="form__block-item my-reward">
+                            <label for="my-reward">Ваши компетенции</label>
+                            <textarea type="text" id="my-reward" placeholder="Опишите какими навыками вы владеете, какие проекты и за какое время вы выполнили"></textarea>
+                        </div>
+                        <input type="submit" value="Обновить информацию" class="update-info">
+                    </div></form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v32-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-v32-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #434652;
+    line-height: 1.5;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 60%;
+    background: #f9f9f9;
+    padding: 2%;
+}
+
+.title {
+    color: #1798cf;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.form{
+    margin-top:2rem ;
+}
+
+.block-title{
+    color: #434652;
+    margin: 0 0 20px 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.fa-circle-info {
+    color: #1798cf;
+    margin-right: 10px;
+}
+
+.info {
+    color: #a7a7a7;
+    font-size: 14px;
+}
+
+.form__block {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 7px 0 #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__block-item{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select {
+    background: #ebf4fc;
+    padding: 16px;
+    border: 2px solid #cae1f4;
+    border-radius: 5px;
+    color: #1798cf;
+    font-size: 16px;
+    width: 100%;
+}
+
+input::placeholder{
+    color: #1798cf;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus, select:focus{
+    border: 2px solid #1eade8;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.full{
+    width: 100%;
+}
+
+.row input[type="radio"]{
+    width: 3%;
+}

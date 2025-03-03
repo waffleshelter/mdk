@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 25px;
+    padding: 0 50px 0 0;
+}
+
+h1 {
+    color: #0EA36E;
+    margin-bottom: 20px;
+}
+
+.check-box, .check-box1, .radio-box{
+    width: 1px;
+    height: 1px;
+    padding-left: 22px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+.c-style, .c-style1, .r-style{
+    width: 16px;
+    height: 16px;
+    border: 2px solid #0EA36E;
+    position: absolute;
+    margin-left:-25px ;
+}
+
+.radio {
+    border-radius: 50%;
+}
+
+/* квадратики */
+
+.check-box:checked + .c-style::before{
+width: 8px;
+height: 8px;
+background: #0EA36E;
+position: absolute;
+content: "";
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.check-box:disabled + .c-style {
+    border-color: #ccc;
+}
+
+.check-box:checked:disabled + .c-style::before {
+    background: #ccc;
+}
+
+.check-box:focus + .c-style{
+    box-shadow: 0 0 0 2px #000;
+}
+
+/* галочки */
+
+.check-box1:checked + .c-style1{
+    background-image: url(../img/check-green.svg);
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.check-box1:disabled + .c-style1 {
+    border-color: #ccc;
+}
+
+.check-box1:checked:disabled + .c-style1 {
+    background-image: url(../img/check-gray.svg);
+}
+
+.check-box1:focus + .c-style1 {
+    box-shadow: 0 0 0 2px #000;
+}
+
+/* кружочки */
+
+.radio-box:checked + .r-style::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #0EA36E;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-box:disabled + .r-style {
+    border-color: #ccc;
+}
+
+.radio-box:focus + .r-style{
+    box-shadow: 0 0 0 2px #000;
+}

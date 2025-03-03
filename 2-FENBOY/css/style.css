@@ -1,0 +1,158 @@
+/*подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ubuntu-v20-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ubuntu-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/ubuntu-v20-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* глобальные стили*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Ubuntu', arial;
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgb(78,78,78);
+ } 
+
+ p {
+    text-align: justify;
+ }
+
+ a {
+    text-decoration: none;
+    color: #e73375;
+ }
+
+ a:hover {
+    color: #000
+ }
+
+ img {
+    border-radius: 15px; /*радиус скругления углов*/
+    max-width: 100%;
+    margin: 20px 0;
+ }
+
+ section {
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 1px solid #e73375;
+ }
+
+ /* шапкаыбю */
+ .header {
+    text-align: center;
+}
+
+nav {
+    padding: 30px 10px;
+    background-image: url(../img/fabric5.png);
+}
+
+.header__logo {
+    border-radius: 0;
+    margin: 50px;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.menu-link_active {
+    color:#000;
+}
+
+main {
+    padding: 1% 10%;
+}
+
+/* начальная информация */
+.intro {
+    text-align: center;
+}
+
+.intro_title {
+    margin: 30px 0 50px;
+}
+.intro__list {
+    list-style-type: none;
+}
+
+.intro__list-item {
+    display: inline-block;
+    margin: 30px;
+}
+
+.item_pink {
+    color: #e73375;
+}
+
+/* Содержание */
+.contents__list{
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+/*  блюдо */
+.dish__entry {
+    text-align: center;
+}
+
+.ingredients-title{
+    color: #e73375;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.list{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.list .fa-check {
+    color: #e73375;
+    margin-right: 15px;
+    font-style: 20px;
+}
+
+.dish__recipe{
+    text-align: center;
+}
+
+.recipe-step {
+    border: 1px solid #e73375;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #f6f4f4;
+    margin: 15px 35px;
+    width: 45%;
+    display: inline-block;
+    height: fit-content;
+}
+

@@ -1,0 +1,43 @@
+.container {
+    width: 50%;
+    margin:  0 auto;
+}
+
+.chart .pipe{
+    background: #eee none repeat scroll 0 0;
+    box-shadow: 3px 3px 3px 0 rgb(200, 200, 200) inset;
+}
+
+.chart .pipe{
+    height: 100%;
+    height: 10px;
+    border-radius:  5px;
+    margin-bottom: 1.2rem;
+}
+
+.chart p {
+    margin: 0 0 5px;
+
+}
+
+.chart .pipe >div {
+    background: #dc3545 none repeat scroll 0 0;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.sector1{
+    width: 40%;
+}
+
+.sector2{
+    width: 38%;
+}
+
+.sector3{
+    width: 18%;
+}
+
+.sector4{
+    width: 4%;
+}

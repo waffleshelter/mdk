@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 5rem;
+
+}
+
+details {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+details+details {
+    margin-top: 1rem;
+}
+
+summary {
+    display: block;
+    cursor: pointer;
+    padding: 1rem 0 1rem 1rem;
+    background: #989bda;
+    border: 1px solid #666ab7;
+    border-radius: 0.5em;
+    box-shadow: inset 0 0 2px #666ab7;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details>summary {
+    list-style: none;
+}
+
+menu span {
+    color: white;
+    text-shadow: 0 1px #000;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.menu-body {
+    padding: 1rem 0 1rem 1rem;
+    border: 1px solid #666ab7;
+    border-radius: 0.5em;
+    box-shadow: inset 0 0 2px #666ab7;
+    margin-top: 1em;
+}

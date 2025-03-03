@@ -1,0 +1,46 @@
+body {
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #2b2e34;
+    color: #dadada;
+    font-size: 32px;
+}
+
+.list li:nth-of-type(3) {
+    color: #41e847;
+}
+
+/* каждый второй */
+/* .list li:nth-of-type(2n){
+    color: #2e9aff;
+} */
+
+/* четные */
+.list li:nth-of-type(even){
+    color: #2e9aff;
+}
+
+.list li:nth-of-type(5),
+.list__item:nth-of-type(3){
+    color: #ffd829;
+} 
+
+/* Первый элемент */
+/* .list li:nth-of-type(1){
+    color: #e7bfbf;
+} */
+.list li:first-of-type{
+    color: #e7bfbf;
+}
+
+/* Последний элемент */
+.list li:last-of-type{
+    color: #2e9aff;
+}
+.list li:nth-last-of-type(1){
+    color: #2e9a44;
+}
+
+.only li:only-of-type {
+    color: #2e9a44;
+}
